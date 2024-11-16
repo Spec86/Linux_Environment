@@ -1,0 +1,24 @@
+sudo tar -zxvf eclipse-java-kepler-SR1-linux-gtk-x86_64.tar.gz -C /usr/
+
+
+
+sudo ln -s /usr/eclipse/eclipse /usr/bin/eclipse
+
+
+
+sudo nano /usr/share/applications/eclipse.desktop
+
+
+
+[Desktop Entry]
+Encoding=UTF-8
+Name=Eclipse IDE
+Comment=Eclipse IDE
+Exec=/usr/bin/eclipse
+Icon=/usr/eclipse/icon.xpm
+Terminal=false
+Type=Application
+StartupNotify=false
+
+
+eclipse
