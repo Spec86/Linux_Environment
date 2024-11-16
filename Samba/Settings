@@ -9,3 +9,7 @@ $ sudo service smbd restart
 Update the firewall rules to allow Samba traffic:
 $ sudo ufw allow samba
 
+Since Samba doesn’t use the system account password, we need to set up a Samba password for our user account:
+$ sudo smbpasswd -a username
+
+
