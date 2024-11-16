@@ -1,5 +1,0 @@
-Install OpenCV-3.3.1
-
-$ chmod +x install-opencv-3.3.1.sh
-
-$ ./install-opencv-3.3.1.sh
