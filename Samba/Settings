@@ -1,0 +1,11 @@
+$ whereis samba
+
+$ sudo nano /etc/samba/smb.conf
+Then press Ctrl-O to save and Ctrl-X to exit from the nano text editor.
+
+Now that we have our new share configured, save it and restart Samba for it to take effect:
+$ sudo service smbd restart
+
+Update the firewall rules to allow Samba traffic:
+$ sudo ufw allow samba
+
