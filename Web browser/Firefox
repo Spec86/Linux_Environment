@@ -1,0 +1,5 @@
+Install Mozilla Firefox
+$ flatpak install flathub org.mozilla.firefox
+
+Run Firefox
+$ flatpak run org.mozilla.firefox
