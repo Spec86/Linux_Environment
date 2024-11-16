@@ -1,2 +1,2 @@
 # Linux_Environment
-Debian-Based Linux Distributions: Ubuntu, LXLE.
+Debian-Based Linux Distributions: Ubuntu 18.04, LXLE.
