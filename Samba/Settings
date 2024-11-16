@@ -1,5 +1,8 @@
 $ whereis samba
 
+$ mkdir -p /home/samba/
+$ sudo -R -0777 /home/samba/
+
 $ sudo nano /etc/samba/smb.conf
 Then press Ctrl-O to save and Ctrl-X to exit from the nano text editor.
 
