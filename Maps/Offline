@@ -1,0 +1,12 @@
+https://flathub.org/apps/org.gnome.Maps
+
+Install
+$ flatpak install flathub org.gnome.Maps
+
+Run
+$ flatpak run org.gnome.Maps
+
+
+Run
+$ java -jar OffRoad.jar
+$ javaw -jar OffRoad.jar
