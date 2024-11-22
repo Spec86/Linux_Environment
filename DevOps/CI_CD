@@ -1,0 +1,2 @@
+CI - это расписывание GitHub Actions для появления release версии asp.net core web api в репозитории GitHub.
+CD - это расписывание GitHub Actions под свои реалии, у кого k8s, у кого Docker, у кого облачный хостинг.
