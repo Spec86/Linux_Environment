@@ -80,7 +80,7 @@ www	    A	    3600   тот же   IPv4
 
 
 
-Name               Type    RDATA                        Проблема?
+Name               Type    RDATA                   Проблема?
 sansasoft            A    80.209.228✅            OK
 sansasoft            A    94.130.228❌            Удалить
 sansasoft            MX    0 sansasoft	           OK
