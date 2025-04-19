@@ -67,8 +67,8 @@ Name	Type	TTL	   RDATA
 www	    A	    3600   тот же   IPv4
 
 📌 Как это работает:
-    @ = sansasoft.al
-    www = www.sansasoft.al
+    @ = sansasoft
+    www = www.sansasoft
     @ и www — это общепринятые короткие обозначения в DNS-панелях, их интерпретируют как нужные поддомены.
 
 ✅ Что делать:
@@ -77,3 +77,26 @@ www	    A	    3600   тот же   IPv4
         @ (Type A) → IPv4 Main IP
         www (Type A) → IPv4 Main IP
     Сохрани.
+
+
+
+Name	            Type	RDATA	           Проблема?
+sansasoft	        A	    80.209.228         ✅	OK
+sansasoft	        A	    94.130.228         ❌	Удалить
+sansasoft	        MX	    0 sansasoft	       OK
+_dmarc.sansasoft	TXT	    DMARC политика	   OK
+sansasoft.al	    TXT	    SPF для 94.130.228 ❌	Удалить или заменить IP
+mail.sansasoft	    CNAME	sansasoft	       OK
+www.sansasoft	    CNAME	sansasoft	       ✅ OK (если sansasoft — A-запись)
+ftp.sansasoft	    CNAME	sansasoft	       OK
+NS записи	        park1/2.uwsdns.com       ❌	❓ Нужна замена, если хочешь управлять DNS у Upflare	
+
+
+NS-записи (если нужно)
+Если ты хочешь управлять DNS через Upflare, а сейчас стоят park1.uwsdns.com — это “парковка”. Нужно:
+✅ Поставить NS-серверы от Upflare, например:
+
+ns1.upflare.com
+ns2.upflare.com
+(точные значения Upflare покажет тебе на вкладке с Name-серверами)
+
