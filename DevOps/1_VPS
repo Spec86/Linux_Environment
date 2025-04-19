@@ -13,3 +13,20 @@
 
 Авторизация:
 Вход по логину и паролю пользователя с sudo-правами (например, root или пользователь, под которым ты установил Webmin).
+
+
+
+
+ШАГ 1: Резервная копия сервера (до начала Ansible-конфигурации)
+
+Поскольку у тебя уже стоит Webmin и возможно немного кастомной настройки, сейчас сделаем фулл-бэкап в tar.gz, вручную — потом можно и это заанслиблить.
+Выполни это на сервере:
+
+sudo tar --exclude=/proc --exclude=/sys --exclude=/dev --exclude=/tmp \
+--exclude=/run --exclude=/mnt --exclude=/media --exclude=/lost+found \
+-czvf /root/full-backup-$(date +%F).tar.gz /
+
+После — скачай архив
+Зайди в Webmin → Others → File Manager, найди /root/full-backup-YYYY-MM-DD.tar.gz и скачай на свой ПК.
+
+Готово! У тебя теперь есть точка возврата.
