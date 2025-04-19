@@ -1,4 +1,4 @@
-Открыть терминал на Desktop Ubuntu
+I) Открыть терминал на Desktop Ubuntu
     ssh username@IPadress (Берем у хостинг провайдера)
     sudo apt install wget gpg -y
     wget -qO - http://www.webmin.com/jcameron-key.asc | sudo gpg --dearmor -o /usr/share/keyrings/webmin.gpg
@@ -17,7 +17,7 @@
 
 
 
-ШАГ 1: Резервная копия сервера (до начала Ansible-конфигурации)
+II) Резервная копия сервера (до начала Ansible-конфигурации)
 
 Поскольку у тебя уже стоит Webmin и возможно немного кастомной настройки, сейчас сделаем фулл-бэкап в tar.gz, вручную — потом можно и это заанслиблить.
 Зайди в Webmin → Tools → Terminal
@@ -31,3 +31,18 @@ sudo tar --exclude=/proc --exclude=/sys --exclude=/dev --exclude=/tmp \
 Зайди в Webmin → Tools → File Manager, найди /root/full-backup-YYYY-MM-DD.tar.gz и скачай на свой ПК.
 
 Готово! У тебя теперь есть точка возврата.
+
+
+
+
+III) DNS домена (без Ansible — делается у регистратора)
+
+На сайте [upflare.com]:
+
+    Добавь A-запись:
+
+        @ → твой VPS IP
+
+        www → твой VPS IP
+
+    Ждать 10–30 минут (иногда до 24 часов)
