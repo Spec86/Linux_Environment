@@ -85,11 +85,11 @@ sansasoft	        A	    80.209.228         ✅	OK
 sansasoft	        A	    94.130.228         ❌	Удалить
 sansasoft	        MX	    0 sansasoft	       OK
 _dmarc.sansasoft	TXT	    DMARC политика	   OK
-sansasoft.al	    TXT	    SPF для 94.130.228 ❌	Удалить или заменить IP
-mail.sansasoft	    CNAME	sansasoft	       OK
-www.sansasoft	    CNAME	sansasoft	       ✅ OK (если sansasoft — A-запись)
-ftp.sansasoft	    CNAME	sansasoft	       OK
-NS записи	        park1/2.uwsdns.com       ❌	❓ Нужна замена, если хочешь управлять DNS у Upflare	
+sansasoft.al	     TXT	    SPF для 94.130.228 ❌	Удалить или заменить IP
+mail.sansasoft	     CNAME	sansasoft	       OK
+www.sansasoft	     CNAME	sansasoft	       ✅ OK (если sansasoft — A-запись)
+ftp.sansasoft	     CNAME	sansasoft	       OK
+NS записи	         park1/2.uwsdns.com       ❌	❓ Нужна замена, если хочешь управлять DNS у Upflare	
 
 
 NS-записи (если нужно)
