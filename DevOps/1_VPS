@@ -27,6 +27,6 @@ sudo tar --exclude=/proc --exclude=/sys --exclude=/dev --exclude=/tmp \
 -czvf /root/full-backup-$(date +%F).tar.gz /
 
 После — скачай архив
-Зайди в Webmin → Others → File Manager, найди /root/full-backup-YYYY-MM-DD.tar.gz и скачай на свой ПК.
+Зайди в Webmin → Tools → File Manager, найди /root/full-backup-YYYY-MM-DD.tar.gz и скачай на свой ПК.
 
 Готово! У тебя теперь есть точка возврата.
