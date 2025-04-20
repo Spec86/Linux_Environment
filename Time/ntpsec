@@ -1,0 +1,21 @@
+sudo apt-get update
+sudo apt-get install ntp
+
+systemctl status ntp
+dpkg -l | grep ntp
+
+sudo nano /etc/ntpsec/ntp.conf
+Если файл есть — можешь редактировать строки server или pool, как в классическом ntp.
+Пример:
+server time.cloudflare.com iburst
+server ntp1.stratum2.ru iburst
+server ntp2.stratum2.ru iburst
+
+
+sudo systemctl restart ntpsec
+systemctl status ntpsec
+
+
+ntpq -p
+Или, если ntpq не установлен:
+ntpsec-ntpq -p
