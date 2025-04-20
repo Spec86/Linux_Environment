@@ -4,6 +4,8 @@ I) Открыть терминал на Desktop Ubuntu
     wget -qO - http://www.webmin.com/jcameron-key.asc | sudo gpg --dearmor -o /usr/share/keyrings/webmin.gpg
         Yes
     echo "deb [signed-by=/usr/share/keyrings/webmin.gpg] http://download.webmin.com/download/repository sarge contrib" | sudo tee /etc/apt/sources.list.d/webmin.list
+    sudo apt update
+    sudo apt install webmin -y
 
     sudo systemctl status webmin
 
