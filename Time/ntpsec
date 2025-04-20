@@ -19,3 +19,7 @@ systemctl status ntpsec
 ntpq -p
 Или, если ntpq не установлен:
 ntpsec-ntpq -p
+
+
+sudo systemctl restart ntpsec
+systemctl status ntpsec
