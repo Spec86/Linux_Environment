@@ -5,6 +5,11 @@ https://github.com/Nyr/openvpn-install
 На VPS-сервере в терминале пишем wget https://git.io/vpn -O openvpn-install.sh && bash openvpn-install.sh
 На VPS-сервере через Webmin скачиваем из The client configuration is available in: /root/*.ovpn
 
-На ноутбуке MX Linux устанавливаем клиент openvpn.
+
+На ноутбуке MX Linux устанавливаем клиент openvpn:
+    sudo apt update
+    sudo apt install openvpn network-manager-openvpn-gnome
+
+
 На ноутбуке MX Linux переименовать этот файл "*.ovpn" на "client.conf" и положить по адресу: /etc/openvpn/client.conf
 На ноутбуке MX Linux пишем: sudo openvpn --config /etc/openvpn/client.conf
