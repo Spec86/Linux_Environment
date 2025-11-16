@@ -31,6 +31,12 @@ I) Открыть терминал на Desktop Ubuntu
         sudo systemctl status webmin
 
 
+I) Открыть терминал на Desktop Ubuntu
+wget https://github.com/webmin/webmin/releases/download/2.600/webmin_2.600_all.deb
+sudo apt install ./webmin_2.600_all.deb -y
+systemctl status webmin
+
+
 
 II) Резервная копия сервера (до начала Ansible-конфигурации)
 
