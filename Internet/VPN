@@ -12,4 +12,5 @@ https://github.com/Nyr/openvpn-install
 
 
 На ноутбуке MX Linux переименовать этот файл "*.ovpn" на "client.conf" и положить по адресу: /etc/openvpn/client.conf
+На ноутбуке MX Linux пишем: sudo cp /Downloads/client.conf /etc/openvpn/
 На ноутбуке MX Linux пишем: sudo openvpn --config /etc/openvpn/client.conf
