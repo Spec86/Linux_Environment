@@ -1,4 +1,4 @@
-I) Открыть терминал на Desktop Ubuntu
+I) Открыть терминал на MX Linux
     ssh username@IPadress (Берем у хостинг провайдера)
     sudo apt install wget gpg -y
     wget -qO - http://www.webmin.com/jcameron-key.asc | sudo gpg --dearmor -o /usr/share/keyrings/webmin.gpg
@@ -16,6 +16,19 @@ I) Открыть терминал на Desktop Ubuntu
 Авторизация:
 Вход по логину и паролю пользователя с sudo-правами (например, root или пользователь, под которым ты установил Webmin).
 
+
+I) Открыть терминал на Desktop Ubuntu
+        wget https://download.webmin.com/jcameron-key.asc
+        gpg --dearmor jcameron-key.asc
+        sudo mv jcameron-key.asc.gpg /usr/share/keyrings/webmin.gpg
+        
+        echo "deb [signed-by=/usr/share/keyrings/webmin.gpg] https://download.webmin.com/download/repository buster contrib" | \
+        sudo tee /etc/apt/sources.list.d/webmin.list
+       
+        sudo apt update
+        sudo apt install webmin -y
+
+        sudo systemctl status webmin
 
 
 
