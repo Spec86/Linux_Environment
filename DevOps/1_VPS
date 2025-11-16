@@ -22,7 +22,7 @@ I) Открыть терминал на Desktop Ubuntu
         gpg --dearmor jcameron-key.asc
         sudo mv jcameron-key.asc.gpg /usr/share/keyrings/webmin.gpg
         
-        echo "deb [signed-by=/usr/share/keyrings/webmin.gpg] https://download.webmin.com/download/repository buster contrib" | \
+        echo "deb [signed-by=/usr/share/keyrings/webmin.gpg] https://download.webmin.com/download/repository stable main" | \
         sudo tee /etc/apt/sources.list.d/webmin.list
        
         sudo apt update
