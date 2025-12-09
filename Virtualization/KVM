@@ -1,0 +1,31 @@
+1) Проверим, поддерживает ли ваш процессор виртуализацию?
+grep -E '(vmx|svm)' /proc/cpuinfo
+    Вникать в вывод терминала не нужно - главное, что он есть. Если в ответ на ввод этой команды - тишина, то ваш процессор не поддерживает виртуализацию.
+
+2) Проверим поддержку аппаратной виртуализации?
+kvm-ok
+sudo apt install cpu-checker
+kvm-ok
+    В ответ вы должны увидеть следующий вывод:
+    INFO: /dev/kvm exists
+    KVM acceleration can be used
+
+3) Установить пакеты, необходимые для работы с KVM
+sudo apt install qemu-kvm libvirt-bin ubuntu-vm-builder bridge-utils
+
+4) При желании установить графическую оболочку для libvirt
+sudo apt install virt-manager
+
+
+
+
+Создание виртуального сервера
+sudo virt-install \
+  --virt-type=kvm \
+  --name ubuntu2024 \
+  --ram 2048 \
+  --vcpus=2 \
+  --os-variant=ubuntu24.04 \
+  --hvm \
+  --cdrom=/iso/ubuntu-24.04.1-server-amd64.iso \
+  --
