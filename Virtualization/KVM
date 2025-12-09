@@ -39,3 +39,9 @@ sudo virt-install \
     Узнаем на каком ПОРТУ работает VNC:
     virsh dumpxml myubuntu2024
 
+8) Убедиться, что tcp forwarding разрешен у службы ssh.
+    Для этого проверить настройки sshd:
+    cat /etc/ssh/sshd_config | grep AllowTcpForwarding
+    AllowTcpForwarding yes
+    Перезагрузить sshd
+
