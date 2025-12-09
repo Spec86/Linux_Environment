@@ -22,7 +22,7 @@ sudo apt install virt-manager
 6) Создание виртуального сервера
 sudo virt-install \
   --virt-type=kvm \
-  --name ubuntu2024 \
+  --name myubuntu2024 \
   --ram 2048 \
   --vcpus=2 \
   --os-variant=ubuntu24.04 \
@@ -34,3 +34,8 @@ sudo virt-install \
 
 Образ виртуального диска мы будем хранить в каталоге /var/lib/libvirt/images/
 Параметр size=20 задает размер виртуального диска в гигабайтах.
+
+7) Далее продолжаем установку через VNC.
+    Узнаем на каком ПОРТУ работает VNC:
+    virsh dumpxml myubuntu2024
+
