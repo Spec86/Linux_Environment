@@ -28,4 +28,6 @@ sudo virt-install \
   --os-variant=ubuntu24.04 \
   --hvm \
   --cdrom=/iso/ubuntu-24.04.1-server-amd64.iso \
-  --
+  --network network=default,model=virtio \
+  --graphics vnc \
+  --disk path=/var/lib/libvirt/images/ubuntu2024.img,size=20,bus=virtio
