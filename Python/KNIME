@@ -2,7 +2,7 @@ cd ~/Downloads
 
 tar -xzf knime_5.8.3.linux.gtk.x86_64.tar.gz
 
-sudo mv knime_* /opt/knime
+sudo mv knime_5.8.3 /opt/knime
 
 /opt/knime/knime
 
