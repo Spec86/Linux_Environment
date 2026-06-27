@@ -7,8 +7,6 @@ sudo mv knime_5.8.3 /opt/knime
 /opt/knime/knime
 
         java -version
-        sudo apt install default-jdk
-
 
 nano ~/.local/share/applications/knime.desktop
 
