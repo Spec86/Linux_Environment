@@ -1,0 +1,33 @@
+Перейдите на официальный сайт и скачайте Linux Installer (64-bit)
+
+cd ~/Downloads
+
+chmod +x Anaconda3-2025.12-2-Linux-x86_64.sh
+
+bash Anaconda3-2025.12-2-Linux-x86_64.sh
+
+conda --version
+python --version
+
+mkdir -p ~/.local/share/applications
+nano ~/.local/share/applications/anaconda-navigator.desktop
+
+
+
+[Desktop Entry]
+Version=1.0
+Type=Application
+Name=Anaconda Navigator
+Comment=Anaconda Navigator
+Exec=/home/di/anaconda3/bin/anaconda-navigator
+Icon=/home/di/anaconda3/lib/python3.13/site-packages/anaconda_navigator/static/images/anaconda-icon-256x256.png
+Terminal=false
+Categories=Development;Science;
+StartupNotify=true
+
+
+chmod +x ~/.local/share/applications/anaconda-navigator.desktop
+
+update-desktop-database ~/.local/share/applications
+
+~/anaconda3/bin/anaconda-navigator
