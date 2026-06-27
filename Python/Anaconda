@@ -31,3 +31,6 @@ chmod +x ~/.local/share/applications/anaconda-navigator.desktop
 update-desktop-database ~/.local/share/applications
 
 ~/anaconda3/bin/anaconda-navigator
+
+conda deactivate
+conda config --set auto_activate_base false
