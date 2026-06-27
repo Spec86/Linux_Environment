@@ -1,0 +1,29 @@
+cd ~/Downloads
+
+tar -xzf knime-5.8.3.linux.gtk.x86_64.tar.gz
+
+sudo mv knime_* /opt/knime
+
+/opt/knime/knime
+
+        chmod +x /opt/knime/knime
+        java -version
+        sudo apt install default-jdk
+
+
+nano ~/.local/share/applications/knime.desktop
+
+
+
+[Desktop Entry]
+Version=1.0
+Type=Application
+Name=KNIME Analytics Platform
+Exec=/opt/knime/knime
+Icon=/opt/knime/icon.xpm
+Terminal=false
+Categories=Development;Science;
+
+
+
+chmod +x ~/.local/share/applications/knime.desktop
