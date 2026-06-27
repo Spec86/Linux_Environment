@@ -34,3 +34,4 @@ update-desktop-database ~/.local/share/applications
 
 conda deactivate
 conda config --set auto_activate_base false
+conda config --set auto_activate false
