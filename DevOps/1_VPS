@@ -32,8 +32,8 @@ I) Открыть терминал на Desktop Ubuntu
 
 
 I) Открыть терминал на Desktop Ubuntu
-wget https://github.com/webmin/webmin/releases/download/2.600/webmin_2.600_all.deb
-sudo apt install ./webmin_2.600_all.deb -y
+wget https://github.com/webmin/webmin/releases/download/2.652/webmin_2.652_all.deb
+sudo apt install ./webmin_2.652_all.deb -y
 systemctl status webmin
 
 
