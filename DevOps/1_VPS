@@ -32,6 +32,9 @@ I) Открыть терминал на Desktop Ubuntu
 
 
 I) Открыть терминал на Desktop Ubuntu
+sudo sed -i 's|http://archive.ubuntu.com|https://archive.ubuntu.com|g' /etc/apt/sources.list.d/ubuntu.sources
+sudo sed -i 's|http://security.ubuntu.com|https://security.ubuntu.com|g' /etc/apt/sources.list.d/ubuntu.sources
+
 wget https://github.com/webmin/webmin/releases/download/2.652/webmin_2.652_all.deb
 sudo apt install ./webmin_2.652_all.deb -y
 systemctl status webmin
