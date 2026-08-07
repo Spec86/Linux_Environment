@@ -1,0 +1,25 @@
+bash <(curl -Ls https://raw.githubusercontent.com/mhsanaei/3x-ui/master/install.sh)
+
+Choose the database type (for personal use, SQLite is recommended)
+Change panel settings (recommended to answer y for increased security)
+Specify the panel port (recommended to use a non‑standard port): 2053
+Create an SSL certificate for a domain or IP address (recommended to create at least for the IP address, option 2)
+
+After installing the control panel, copy the credentials in a safe space or memorize them. If the installation was successful, you will be provided with login data in this format:
+    Username
+    Password
+    WebBasePath
+    Database
+    Access URL
+    API Token
+
+
+in Terminal
+    x-ui
+    SSL Certificate Management
+    Get SSL (Domain)
+    api.sansasoft.al
+    Please choose which port to use (default is 80): 80
+    Would you like to modify --reloadcmd for ACME? (y/n): y
+    Preset: systemctl reload nginx ; x-ui restart: 1
+    Would you like to set this certificate for the panel? (y/n): n
