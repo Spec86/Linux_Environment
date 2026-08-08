@@ -18,7 +18,7 @@ in Terminal
     x-ui
     SSL Certificate Management
     Get SSL (Domain)
-    api.sansasoft.al
+    api.my-domain.al
     Please choose which port to use (default is 80): 80
     Would you like to modify --reloadcmd for ACME? (y/n): y
     Preset: systemctl reload nginx ; x-ui restart: 1
